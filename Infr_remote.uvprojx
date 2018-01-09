@@ -149,7 +149,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>6</TargetSelection>
+          <TargetSelection>11</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -163,7 +163,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>Segger\JL2CM3.dll</Driver>
+            <Driver>STLink\ST-LINKIII-KEIL_SWO.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -173,10 +173,10 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>0</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4099</DriverSelection>
+            <DriverSelection>4103</DriverSelection>
           </Flash1>
           <bUseTDR>0</bUseTDR>
-          <Flash2>Segger\JL2CM3.dll</Flash2>
+          <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
@@ -369,7 +369,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_LD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\STM32F10x_FWLib\inc;.\SYSTEM\delay;.\SYSTEM\mix;.\SYSTEM\sys;.\SYSTEM\usart;.\CORE;.\USER\inc</IncludePath>
+              <IncludePath>.\STM32F10x_FWLib\inc;.\SYSTEM\delay;.\SYSTEM\mix;.\SYSTEM\sys;.\SYSTEM\usart;.\CORE;.\USER\inc;.\SYSTEM\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -437,6 +437,21 @@
               <FileType>1</FileType>
               <FilePath>.\USER\src\ESP8266.c</FilePath>
             </File>
+            <File>
+              <FileName>step_mote.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\src\step_mote.c</FilePath>
+            </File>
+            <File>
+              <FileName>steering_engine.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\src\steering_engine.c</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER\src\io.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -466,6 +481,11 @@
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\SYSTEM\mix\system_stm32f10x.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SYSTEM\timer\timer.c</FilePath>
             </File>
           </Files>
         </Group>

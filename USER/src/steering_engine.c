@@ -37,7 +37,7 @@ void StEngSetDegree(u32 u32Degree)
 				u32Degree = 180;
 		}
 		//gSteEngPwmUs = u32Degree/180*5*1000 + 500;
-		gSteEngPwmUs = u32Degree*5*1000/180 + 500;
+		gSteEngPwmUs = u32Degree*2*1000/180 + 500;
 }
 
 
